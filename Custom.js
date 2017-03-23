@@ -20,9 +20,8 @@ $("#postData").click(function(){
     }
 
 
-    //data is process at the back end
 
-    $.post("Services.php", {name:"Sam"}, function(data,response){
+    $.post("Services.php", {name:inputDataArray}, function(data,response){
 
         alert("Server returned is" + data);
 
